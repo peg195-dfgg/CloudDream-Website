@@ -1,49 +1,195 @@
 <!DOCTYPE html>
-<html lang="cn"> 
+<html lang="zh-CN">
+
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="robots" content="all"/>
-
-    <meta name="description" content="欢迎来到CloudDream插件服务器！">
-    <meta name="keywords" content="CloudDream,云梦谷,CloudDream服务器,云梦谷服务器">
-    <meta name="author" content="clouddream.pages.dev">
-    <link rel="icon" href="assets/logo.ico"> 
-
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://clouddream.pages.dev/">
-    <meta property="og:title" content="CloudDream插件服务器">
-    <meta property="og:description" content="欢迎来到CloudDream插件服务器！">
-    <meta property="og:image" content="https://image">
-    <meta name="theme-color" content=#12345>
-
-    <meta name="yandex-verification" content="26dbeea0e548f435" />
-
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" integrity="sha512-c42qTSw/wPZ3/5LBzD+Bw5f7bSF2oxou6wEb+I/lqeaKV5FDIfMvvRp772y4jcJLKuGUOpbJMdg/BTl50fJYAw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="dist/style.css"> 
-<title></title>
+    <title>CloudDream云梦谷官网 - 主页</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="robots" content="all,follow">
+    <!-- Bootstrap CSS-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <!-- Custom Font Icons CSS-->
+    <link rel="stylesheet" href="css/landy-iconfont.css">
+    <!-- Google fonts - Open Sans-->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800">
+    <!-- owl carousel-->
+    <link rel="stylesheet" href="css/owl.carousel.css">
+    <link rel="stylesheet" href="css/owl.theme.default.css">
+    <!-- theme stylesheet-->
+    <link rel="stylesheet" href="css/style.css" id="theme-stylesheet">
+    <!-- Custom stylesheet-->
+    <link rel="stylesheet" href="css/custom.css">
+    <!-- Favicon-->
+    <link rel="shortcut icon" href="/img/logo.png">
+    <!-- animate.css -->
+    <link href="css/animate.min.css" rel="stylesheet">
 </head>
+
 <body>
-    <div class="bg"></div>
-    <!--- Particles -->  <div class="animation-wrapper"> <div class="particle particle-1"></div> <div class="particle particle-2"></div> <div class="particle particle-3"></div> <div class="particle particle-4"></div> </div>
-    <div class="center">
-        <div class="animate__animated animate__jackInTheBox">
-            <h1>欢迎来到 CloudDream-云梦谷 插件服务器！</h1> <!--- Server Name -->
-            <p>1.8.0 ~ 1.20.4全版本互通插件服务器</p> <!--- Description -->
-            <div class="animate__animated animate__bounceIn animate__delay-1s">
-                <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ddOQLJrhzfp1ERBHFddCOWjjQHFJfjn4&authKey=o4u9eWaTqHB4Hr%2BMHPvyzSEkYE%2B0TNvXsioVVn64I5djALzlq2Y4HqarH2hFcbBF&noverify=0&group_code=697780476"><button class="btn1"><i class="fab fa-discord"></i> 加入我们</button></a>
-                <a href="https://space.bilibili.com/518222861"><button class="btn2"><i class="fas fa-shopping-basket"></i> 服主B站</button></a>
-                <a href="https://gitlab.com/peg195/cloud-dream-website"><button class="btn3"><i class="fas fa-poll"></i> 开源地址</button></a>
+    <!-- 导航栏 -->
+    <header class="header">
+        <nav class="navbar navbar-expand-lg fixed-top">
+            <img class="logo" src="img/logo.png" alt="">
+            <a href="/index.html" class="navbar-brand">CloudDream云梦谷MC服务器</a>
+            <button type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"
+                class="navbar-toggler navbar-toggler-right">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+                <ul class="navbar-nav ml-auto align-items-start align-items-lg-center">
+                    <li class="nav-item">
+                        <a href="#welcome" class="nav-link link-scroll"><i class="fas fa-home"></i>首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#game-play" class="nav-link link-scroll"><i class="fas fa-gamepad"></i>玩法</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about-us" class="nav-link link-scroll"><i class="fas fa-info"></i>关于我们</a>
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <i class="fas fa-link" aria-hidden="true"></i>其他
+                        </a>
+                        <div class="dropdown-menu dropdown-menu-right animate__animated"
+                            aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="/page/sponsored-list.html">赞助名单</a>
+                            <a class="dropdown-item" href="/page/server-history.html">更新日志</a>
+                            <div class="dropdown-divider"></div>
+                            <a class="dropdown-item" mdui-dialog="{target: '#music-player-settings'}">音乐播放器设置</a>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="welcome" class="welcome welcome-home">
+        <div class="container">
+            <div class="row d-flex">
+                <div class="col-lg-6 text order-2 order-lg-1">
+                    <h1>欢迎来到 CloudDream云梦谷MC服务器官网</h1>
+                    <p class="welcome-text">
+                        1.8.0 ~ 1.20.4全版本互通插件服务器
+                    </p>
+                    <div class="CTA">
+                        <a href="#game-play" class="btn btn-primary btn-shadow btn-gradient link-scroll">
+                            开始了解！
+                        </a>
+                        <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ddOQLJrhzfp1ERBHFddCOWjjQHFJfjn4&authKey=o4u9eWaTqHB4Hr%2BMHPvyzSEkYE%2B0TNvXsioVVn64I5djALzlq2Y4HqarH2hFcbBF&noverify=0&group_code=697780476" target="_blank" class="btn btn-outline-primary">
+                            立即加入我们
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-6 order-1 order-lg-2">
+                    <iframe style="width: 100%; height: 100%;"
+                        src="//player.bilibili.com/player.html?aid=1352146776&bvid=BV1az421Z7Jx&cid=1480485601&p=1"
+                        scrolling="no" border="0" frameborder="no" framespacing="0" allowfullscreen="true"> </iframe>
+                </div>
             </div>
         </div>
+    </section>
+
+    <section id="game-play" class="game-play bg-gray">
+        <div class="container">
+            <div class="row d-flex justify-content-center">
+                <div class="col-lg-8 text-center">
+                    <h2 class="h3 mb-5"><i class="fas fa-solid fa-earth-americas"></i>多玩法 | 总有一个是您喜欢的！</h2>
+                    <div class="game-play-mockup">
+                        <div id="nav-tabContent" class="tab-content">
+                            <div id="nav-first" role="tabpanel" aria-labelledby="nav-first-tab"
+                                class="tab-pane fade show active">
+                                <img src="/img/server-photo/game-play/插件生存.png" alt="插件生存" title="插件生存"
+                                    class="img-fluid">
+                            </div>
+                            <div id="nav-second" role="tabpanel" aria-labelledby="nav-second-tab" class="tab-pane fade">
+                                <img src="img/server-photo/game-play/空岛生存.png" alt="空岛生存" title="空岛生存"
+                                    class="img-fluid">
+                            </div>
+                            <div id="nav-third" role="tabpanel" aria-labelledby="nav-third-tab" class="tab-pane fade">
+                                <img src="img/server-photo/game-play/心跳水立方.png" alt="..." class="img-fluid">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div role="tablist" class="nav nav-tabs">
+                <div class="row">
+                    <div class="col-md-4">
+                        <a id="nav-first-tab" data-toggle="tab" href="#nav-first" role="tab" aria-controls="nav-first"
+                            aria-expanded="true" class="nav-item nav-link active">
+                            <span class="number">1</span>插件生存 - 体验多样化游戏玩法
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a id="nav-second-tab" data-toggle="tab" href="#nav-second" role="tab"
+                            aria-controls="nav-second" class="nav-item nav-link">
+                            <span class="number">2</span>空岛生存 - 挑战高空孤岛生存模式
+                        </a>
+                    </div>
+                    <div class="col-md-4">
+                        <a id="nav-third-tab" data-toggle="tab" href="#nav-third" role="tab" aria-controls="nav-third"
+                            class="nav-item nav-link">
+                            <span class="number">3</span>心跳水立方 - 挑战落入水池
+                        </a>
+                    </div>
+                    <div class="col-md-12 text-center mt-4">
+                        <a target="_blank" href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ddOQLJrhzfp1ERBHFddCOWjjQHFJfjn4&authKey=o4u9eWaTqHB4Hr%2BMHPvyzSEkYE%2B0TNvXsioVVn64I5djALzlq2Y4HqarH2hFcbBF&noverify=0&group_code=697780476"><i
+                                class="fa fa-solid fa-right-to-bracket"></i>更多请加入QQ群</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="about-us" class="about-us">
+        <div class="container">
+            <h2>关于我们</h2>
+            <div class="row">
+                <p class="lead col-lg-10">
+                    这是一个1.8.0 ~ 1.20.4全版本互通插件服务器
+                    <br>
+                    由 YEE 运维
+                </p>
+                <p class="lead col-lg-10">
+                    <img src="img/服主头像.jpg" alt="服主头像.jpg" title="服主头像.jpg" class="img-fluid rounded">
+                </p>
+            </div>
+            <a href="http://qm.qq.com/cgi-bin/qm/qr?_wv=1027&k=ddOQLJrhzfp1ERBHFddCOWjjQHFJfjn4&authKey=o4u9eWaTqHB4Hr%2BMHPvyzSEkYE%2B0TNvXsioVVn64I5djALzlq2Y4HqarH2hFcbBF&noverify=0&group_code=697780476" target="_blank"
+                class="btn btn-primary btn-shadow btn-gradient">了解更多！</a>
+        </div>
+    </section>
+
+
+
+    
+    <div id="scrollTop">
+        <div class="d-flex align-items-center justify-content-end">
+            <i class="fa-solid fa-arrow-up-long"></i>返回顶部
+        </div>
     </div>
-    <script src="https://cdn.staticfile.net/translate.js/3.2.1/translate.js">
- translate.language.setLocal('chinese_simplified'); //设置本地语种（当前网页的语种）。如果不设置，默认自动识别当前网页显示文字的语种。 可填写如 'english'、'chinese_simplified' 等，具体参见文档下方关于此的说明。
-translate.service.use('client.edge'); //设置机器翻译服务通道，直接客户端本身，不依赖服务端 。相关说明参考 http://translate.zvo.cn/43086.html
-translate.execute();//进行翻译 
-</script>
-    <script src="app/js/script.js"></script>
-    </body>
-  <!--- 模板开源地址：https://gitlab.com/dfggmc/dfgg-website-templates -->    
+    <div id="music-player-container"></div>
+    <div id="footer"></div>
+    <script src="js/jquery.min.js"></script>
+    <script src="js/deb46094a2.js" crossorigin="anonymous"></script>
+    <script src="js/popper.min.js"> </script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="js/mian.js"></script>
+    <script src="js/front.js"></script>
+    <script>
+        $("#footer").load('/common/footer.html');
+
+        const musicPlayer = new MusicPlayerSettings();
+        musicPlayer.mian();
+    </script>
+</body>
+
 </html>
